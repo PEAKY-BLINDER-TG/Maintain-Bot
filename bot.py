@@ -20,7 +20,6 @@ buttons = [[
         InlineKeyboardButton('🔐 𝒄𝒍𝒐𝒔𝒆', callback_data="close")
         ]]
     
-    reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_photo(
         chat_id=update.chat.id,
