@@ -53,3 +53,21 @@ Bot Started!!! Now Join on @Vkprojects
 )
 
 Bot.run()
+
+@Client.on_message(filters.command(["repo"]) & filters.private, group=1)
+async def about(bot, update):
+    
+    buttons = [[
+        InlineKeyboardButton('𝒉𝒐𝒎𝒆', callback_data='start'),
+        InlineKeyboardButton('𝒄𝒍𝒐𝒔𝒆 🔐', callback_data='close')
+    ]]
+    reply_markup = InlineKeyboardMarkup(buttons)
+    
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.REPO_TEXT,
+        reply_markup=reply_markup,
+        disable_web_page_preview=True,
+        parse_mode="html",
+        reply_to_message_id=update.message_id
+    )
