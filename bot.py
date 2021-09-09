@@ -28,3 +28,4 @@ async def start(client, message):
                 ]
             ]
         )
+bot.run()
