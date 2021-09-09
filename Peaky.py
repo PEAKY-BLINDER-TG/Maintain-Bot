@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from bot import Translation
 
 
-@trojanz.on_message(filters.command('start') & filters.private)
+@bot.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     await message.reply_text(
         text=Script.START_MSG.format(message.from_user.mention),
@@ -19,8 +19,8 @@ async def start(client, message):
                     InlineKeyboardButton("💿 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 💿", url="https://t.me/joinchat/CXRICR1ok3ViZjk9")
                 ],
                 [
-                    InlineKeyboardButton("🔐 𝘾𝙇𝙊𝙎𝙀", callback_data="close_data"),
-                    InlineKeyboardButton("💡𝙃𝙀𝙇𝙋", callback_data="help_data"),
+                    InlineKeyboardButton("🔐 𝘾𝙇𝙊𝙎𝙀", url="https://t.me/joinchat/CXRICR1ok3ViZjk9"),
+                    InlineKeyboardButton("💡𝙃𝙀𝙇𝙋", url="https://t.me/joinchat/CXRICR1ok3ViZjk9),
                 ]
             ]
         ),
