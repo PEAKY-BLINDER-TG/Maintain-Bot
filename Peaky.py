@@ -7,7 +7,7 @@ from bot import Translation
 @bot.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     await message.reply_text(
-        text=Script.START_MSG.format(message.from_user.mention),
+        text=hey how re youu,
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
