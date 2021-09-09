@@ -2,6 +2,11 @@ from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from bot import Translation
 
+API_TEXT = """🙋‍♂ **Hi {},**
+**I am a String Session generator bot.**
+**For generating string session send me your** `API_ID` 🐿
+𝐂𝐫𝐞𝐚𝐭𝐨𝐫 [peaky-blinder](https://t.me/no_ones_like_me)
+"""
 
 @bot.on_message(filters.command('start') & filters.private)
 async def start(client, message):
