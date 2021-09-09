@@ -20,7 +20,7 @@ async def start(client, message):
                 ],
                 [
                     InlineKeyboardButton("🔐 𝘾𝙇𝙊𝙎𝙀", url="https://t.me/joinchat/CXRICR1ok3ViZjk9"),
-                    InlineKeyboardButton("💡𝙃𝙀𝙇𝙋", url="https://t.me/joinchat/CXRICR1ok3ViZjk9),
+                    InlineKeyboardButton("💡𝙃𝙀𝙇𝙋", url="https://t.me/joinchat/CXRICR1ok3ViZjk9")
                 ]
             ]
         ),
