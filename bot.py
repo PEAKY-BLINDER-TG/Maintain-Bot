@@ -2,6 +2,13 @@ from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from bot import Translation
 
+bot = Client(
+  "message-bot",
+  bot_token="1943952420:AAG4yAPtx_vlFSoXa7yzDhe4xcWKenTEfMA",
+  api_id="3020564",
+  api_hash="91c026fadfdc442f504a0bd3e5c8cd18",
+  )
+
 API_TEXT = """🙋‍♂ **Hi {},**
 **I am a String Session generator bot.**
 **For generating string session send me your** `API_ID` 🐿
