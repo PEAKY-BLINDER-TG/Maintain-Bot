@@ -27,4 +27,4 @@ async def start(client, message):
                     InlineKeyboardButton("💡𝙃𝙀𝙇𝙋", url="https://t.me/joinchat/CXRICR1ok3ViZjk9")
                 ]
             ]
-        ),
+        )
