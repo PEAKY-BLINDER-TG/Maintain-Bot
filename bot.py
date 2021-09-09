@@ -11,7 +11,7 @@ API_TEXT = """🙋‍♂ **Hi {},**
 @bot.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     await message.reply_text(
-        text=text=API_TEXT.format(m.from_user.mention(style='md')),
+        text=API_TEXT.format(m.from_user.mention(style='md')),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
